@@ -94,3 +94,10 @@ if (message.content.toLowerCase().startsWith('/kick')) {
   message.channel.send(`**${member.user.tag}** Was Been Kicked by **${message.author.tag}** Reason: ${reason}`);
 }
 })
+
+client.on(`message`, msg => {
+const memelink = ["https://cdn.discordapp.com/attachments/452879339168464897/458924895535890442/unknown_1.png","https://cdn.discordapp.com/attachments/452879339168464897/458924907330404362/unknown.png","https://cdn.discordapp.com/attachments/454928519349272576/458925103477030912/unknown_2.png","https://cdn.discordapp.com/attachments/454928519349272576/457998168836014080/FB_IMG_1528979460130.jpg","https://cdn.discordapp.com/attachments/454928519349272576/454949775171649546/13307204_1213256318692790_6353798062515658926_n.jpg","https://cdn.discordapp.com/attachments/454928519349272576/455796181352579102/Untitle1d.png","https://cdn.discordapp.com/attachments/454928519349272576/455816802308456480/FB_IMG_1528639014229.jpg","https://cdn.discordapp.com/attachments/454928519349272576/456794271132155904/35226983_385737815168766_3395103645270802432_n.png","https://cdn.discordapp.com/attachments/454928519349272576/458061129189425163/received_1785023544949278.png","https://cdn.discordapp.com/attachments/457169498542178315/457170669453443082/suntmaismecherdecatotimereuarekendrydreptatejpg.jpg","https://cdn.discordapp.com/attachments/454928519349272576/459006134875848714/Screenshot_20180528-1905032.png","https://cdn.discordapp.com/attachments/454928519349272576/456773403979022356/received_2068949470039009.jpeg","https://cdn.discordapp.com/attachments/454928519349272576/455092508423225344/tenor.gif"];
+if (msg.content.startsWith(`g.memes`)) {
+   msg.channel.send({file: memelink[Math.floor(Math.random() * memelink.length)]}).catch(err => {console.log(err)})
+}
+})
