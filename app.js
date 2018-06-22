@@ -50,11 +50,11 @@ client.on("guildMemberAdd", function(member) {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('459479908498931718').setName(`ðŸ“‰ Members: ${member.guild.memberCount}`);
+    member.guild.channels.get('459479908498931718').setName(`(+) Members: ${member.guild.memberCount}`);
 });
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('459479908498931718').setName(`ðŸ“‰ Members: ${member.guild.memberCount}`);
+    member.guild.channels.get('459479908498931718').setName(`(+) Members: ${member.guild.memberCount}`);
 });
 
 client.on('message', message => {
