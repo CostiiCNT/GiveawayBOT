@@ -12,7 +12,7 @@ client.on('message', msg => {
   }
 });
 
-client.login('TOKEN BOT');
+client.login('NDU5NjQ3MjczMjMyNzYwODMz.Dg5PZw.IxgmNNgrsfNBMErQWf2HT74VN6I');
 
 client.on('message', message => {
 if (message.content === 'g.serverinfo') {
