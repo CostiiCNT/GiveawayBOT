@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = "NDU5NjQ3MjczMjMyNzYwODMz.Dg5PZw.IxgmNNgrsfNBMErQWf2HT74VN6I"
+const token = "token bot"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -12,7 +12,7 @@ client.on('message', msg => {
   }
 });
 
-client.login('NDU5NjQ3MjczMjMyNzYwODMz.Dg5PZw.IxgmNNgrsfNBMErQWf2HT74VN6I');
+client.login('TOKEN BOT');
 
 client.on('message', message => {
 if (message.content === 'g.serverinfo') {
@@ -82,7 +82,7 @@ if (message.content.toLowerCase().startsWith('g.ban')) {
 })
 
 client.on('message', message => {
-if (message.content.toLowerCase().startsWith('/kick')) {
+if (message.content.toLowerCase().startsWith('g.kick')) {
     let member = message.mentions.members.first();
     let reason = message.content.split(' ').slice(2).join(' ');
   if(!message.guild.member(message.author).hasPermission('KICK_MEMBERS')) return message.reply("**Sorry, but you do not have access to this command!**");
